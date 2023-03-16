@@ -6,4 +6,7 @@ export const INTL = {
         GENERATE: `GENERATE`,
         COPY: `COPY`,
     },
+    DESCRIPTION: {
+        AUTHOR: `LOQUMI`,
+    },
 };
