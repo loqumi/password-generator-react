@@ -1,0 +1,9 @@
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  & + & {
+    margin: 270px 0 300px 0;
+  }
+}

@@ -1,5 +1,9 @@
 export const INTL = {
-    DESCRIPTION: {
+    TITLE: {
         MAIN: `PASSWORD GENERATOR`,
+    },
+    BUTTON: {
+        GENERATE: `GENERATE`,
+        COPY: `COPY`,
     },
 };
