@@ -17,10 +17,10 @@
   }
 }
 
-@media screen and (max-width: 323px) {
+@media screen and (max-width: 365px) {
   .button {
     & + & {
-      margin: 0;
+      margin: 10px 0 ;
     }
   }
 }
