@@ -6,6 +6,12 @@ export const Field = ({onChange, value}) => {
     }
 
     return (
-        <input className={style.input} onChange={handleChange} value={value} disabled/>
+        <input className={style.input}
+               placeholder={"Click GENERATE to generate random symbols string"}
+               onChange={handleChange}
+               value={value}
+               disabled
+               id={"field"}
+        />
     );
 };
