@@ -33,13 +33,14 @@ function App() {
     </div>
   );
 }
+
 const currentYear = new Date().getFullYear();
 
 const PasswordField = () => {
     const value = useStore($password)
     const onChange = useEvent(changePassword)
     const handleChange = (value) => onChange(value)
-    return <Field onChange={handleChange} value={value}/>
+    return <Field onChange={handleChange} value={value} />
 }
 
 const GenerateButton = () => {
@@ -47,6 +48,12 @@ const GenerateButton = () => {
     const handleClick = () => onClick()
     return <Button title={intl(INTL.BUTTON.GENERATE)} onClick={handleClick} />
 };
-const CopyButton = () => <Button title={intl(INTL.BUTTON.COPY)} />;
+const CopyButton = () => {
+    const value = useStore($password)
+    const handleClick = () => {
+        navigator.clipboard.writeText(value)
+    }
+ return <Button title={intl(INTL.BUTTON.COPY)} onClick={handleClick}/>
+};
 
 export default App;
