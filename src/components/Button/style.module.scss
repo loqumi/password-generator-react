@@ -2,22 +2,14 @@
   border: 3px solid #000000;
   color: black;
   padding: 15px 30px;
-  width: 150px;
+  width: 147px;
   text-align: center;
   cursor: pointer;
   transition: .4s;
-  margin: 0 10px;
+  margin: 10px 20px;
 
   &:hover {
     background: black;
     color: white;
-  }
-}
-
-@media screen and (max-width: 365px) {
-  .button {
-    & + & {
-      margin: 10px 0 ;
-    }
   }
 }

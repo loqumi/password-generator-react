@@ -39,10 +39,9 @@ const currentYear = new Date().getFullYear();
 const PasswordField = () => {
     const value = useStore($password)
     const onChange = useEvent(changePassword)
-    const handleChange = (value) => onChange(value)
+    const handleChange = (value : string) => onChange(value)
     return <Field onChange={handleChange} value={value} />
 }
-
 const GenerateButton = () => {
     const onClick = useEvent(generatePassword)
     const handleClick = () => onClick()
@@ -55,5 +54,4 @@ const CopyButton = () => {
     }
  return <Button title={intl(INTL.BUTTON.COPY)} onClick={handleClick}/>
 };
-
 export default App;

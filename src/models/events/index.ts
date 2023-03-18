@@ -1,4 +1,4 @@
 import {createEvent} from "effector";
 
-export const changePassword = createEvent()
+export const changePassword = createEvent <string>()
 export const generatePassword = createEvent()

@@ -1,7 +1,11 @@
 import style from "./style.module.scss";
-
-export const Field = ({onChange, value}) => {
-    const handleChange = (e) => {
+import React from "react";
+type TProps = {
+    value: string,
+    onChange: (value:string) => void
+}
+export const Field = ({onChange, value} : TProps) => {
+    const handleChange = (e : React.ChangeEvent <HTMLInputElement>) => {
         onChange(e.target.value)
     }
 
