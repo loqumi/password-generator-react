@@ -8,3 +8,9 @@
   box-shadow: 0 0 10px 5px #888888;
   width: 800px;
 }
+
+@media screen and (max-width: 420px) {
+  .section {
+    justify-content: space-around;
+  }
+}
