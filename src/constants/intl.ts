@@ -9,4 +9,10 @@ export const INTL = {
     DESCRIPTION: {
         AUTHOR: `LOQUMI`,
     },
+    TOGGLE: {
+        NUMERIC: `Numbers`,
+        LOWER: `Lowercase letters`,
+        UPPER: `Uppercase letters`,
+        SYMBOLS: `Symbols`,
+    }
 };
