@@ -10,8 +10,14 @@
   font-size: 32px;
   margin: 10px;
   text-align: center;
-  border: 2px solid black;
+  border: 3px solid black;
+
+  &:hover {
+    background: black;
+    color: white;
+  }
 }
+
 input[type=range] {
   height: 27px;
   -webkit-appearance: none;
@@ -99,4 +105,12 @@ input[type=range]:focus::-ms-fill-lower {
 }
 input[type=range]:focus::-ms-fill-upper {
   background: black;
+}
+
+@media screen and (max-height: 600px) {
+  .number {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
 }
